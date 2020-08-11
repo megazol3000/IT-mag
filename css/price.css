@@ -1,0 +1,33 @@
+.price {
+	background-image: url(..//img/bgprice.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;	
+	height: 900px;
+	padding: 0 0 60px 0;
+}
+.price h2 {
+	padding: 60px 0;
+}
+.tables {
+	display: flex;
+	padding: 0;
+}
+tr {
+	background-color: aliceblue;
+	border: 1px solid #000;
+}
+td {
+	padding: 3px 15px;
+
+}
+.table1>tbody>tr:nth-of-type(odd){
+    background-color: #f2f2f2;
+}
+.table1 {
+	width: 100%;
+}
+table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+}

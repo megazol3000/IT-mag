@@ -1,0 +1,88 @@
+@import url(header.css);
+@import url(advantages.css);
+@import url(price.css);
+@import url(review.css);
+@import url(footer.css);
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none !important;
+}
+h2 {
+	font-size: 28px;
+	text-align: center;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;	
+	color: #fff;
+}
+							/*Оформление форм*/
+.main-form {
+	background-color: #fff;
+	color: #000;
+	text-align: center;	
+	max-width: 100%;
+	padding: 15px 25px;
+}
+	/*Заголовок формы*/
+.main-form-text {
+	margin-bottom: 2rem;
+	font-size: 20px;
+}
+.main-form p {
+	font-size: 0.6em;
+	text-align: left;
+	margin-top: 10px;
+}
+/*Поле для ввода*/
+.form-input {
+	display: block;
+	border: 1px solid grey;
+	width: 100%;
+	padding: 1rem;
+	margin: 2rem 0;
+	border-radius: 5px;
+}
+
+
+/*Подписи к полям*/
+label {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-color: #fff;
+	padding: 0.5rem;
+	font-size: 0.7rem;
+}
+
+/*Кнопка отправить заявку*/
+.main-form-btn {
+display: block;
+height: 3.5rem;
+width: 100%;
+font-size: 0.7em;
+}
+
+.button {
+	background-color: #fcb303;
+	color: #000;
+	font-weight: 700;
+	font-size: 15px;
+	padding: 10px 18px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	border: none;
+	transition: all 0.2s;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button:hover {
+	cursor: pointer;
+	background-color: darken(#fcb303, 5%);
+
+}

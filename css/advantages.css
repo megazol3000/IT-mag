@@ -1,0 +1,22 @@
+.advantages {
+background: #fff;
+	height: 630px;
+}
+.advantages h2 {
+	padding: 60px 0;
+}
+.advantage-list {		
+	margin-bottom: 25px;
+}
+.advantage-list img {
+	width: 50px;
+	height: 50px;
+	padding-right: 10px;
+}
+.advantage-list p {
+	margin: auto 0;
+}
+.ad1, .ad2, .ad3, .ad4, .ad5, .ad6 {
+	display: flex;
+	margin-bottom: 25px;
+}

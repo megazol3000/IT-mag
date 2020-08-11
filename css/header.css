@@ -1,0 +1,95 @@
+header {
+	background-color: #000;
+	color: #fff;
+	height: 100vh;
+	background-image: url(..//img/bg5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;	
+	
+}
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img{
+	width: 70px;
+	height: auto;
+	margin-right: 5px;
+	display: inline-block;
+}
+.logo-text {
+	font-size: 20px;
+	font-weight: 500;
+	display: inline-block;
+	
+}
+nav {
+	color: #fff;
+	background-color: rgba(75, 109, 72, 75%);
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
+.nav ul, .navigation {
+	display: flex;
+	align-items: center;
+}
+li {
+	margin-right: 30px;
+}
+.phone {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.nav-btn {
+	background-color: #fff;
+	border: 3px solid #fcb303;
+	width: 150px;
+	height: 40px;
+	color: #fcb303;
+}
+
+
+
+
+
+
+
+				/*Offer*/
+.offer-container {
+	height: 80%;
+}
+ .offer-row {
+	height: 100%;
+    align-content: center;
+}
+h1 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-top: 0;
+  	margin-bottom: 2rem;
+  	line-height: 3rem;
+  	color: black;
+ }
+span {
+  	color: red;
+  	font-size: 32px;	
+  	font-weight: 700;
+}
+.main-subtitle {
+	margin-bottom: 1rem;
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 2rem;
+	color: #000;
+}	
+
+
+
+
