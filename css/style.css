@@ -2,17 +2,20 @@
 @import url(advantages.css);
 @import url(price.css);
 @import url(review.css);
+@import url(question.css);
 @import url(footer.css);
+@import url(contacts.css);
+@import url(popup.css);
 
 * {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	outline: none !important;
 }
 h2 {
-	font-size: 28px;
+	font-size: 32px;
 	text-align: center;
 }
 ul {
@@ -35,11 +38,17 @@ a {
 	margin-bottom: 2rem;
 	font-size: 20px;
 }
-.main-form p {
+form a {
+	font-weight: 700;
+	text-decoration: underline;
+	color: #000;
+}
+.checkboxp {
 	font-size: 0.6em;
-	text-align: left;
+	text-align: center;
 	margin-top: 10px;
 }
+
 /*Поле для ввода*/
 .form-input {
 	display: block;
@@ -70,7 +79,7 @@ font-size: 0.7em;
 }
 
 .button {
-	background-color: #fcb303;
+	background-color: #fcca03;
 	color: #000;
 	font-weight: 700;
 	font-size: 15px;
@@ -79,10 +88,8 @@ font-size: 0.7em;
 	text-transform: uppercase;
 	border: none;
 	transition: all 0.2s;
-	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-button:hover {
-	cursor: pointer;
-	background-color: darken(#fcb303, 5%);
-
+.button:hover {
+  cursor: pointer;
+  background-color: #e3a103;
 }

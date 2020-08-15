@@ -36,6 +36,7 @@ nav {
 .nav ul, .navigation {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 li {
 	margin-right: 30px;
@@ -54,6 +55,18 @@ li {
 	height: 40px;
 	color: #fcb303;
 }
+.icons {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.icons-nav i {
+	font-size: 20px;
+	padding-left: 15px;
+}
 
 
 
@@ -66,30 +79,35 @@ li {
 	height: 80%;
 }
  .offer-row {
-	height: 100%;
-    align-content: center;
+	height: 85%;
+    align-content: flex-end;
 }
 h1 {
-	font-size: 36px;
+	font-size: 46px;
 	font-weight: 700;
 	margin-top: 0;
   	margin-bottom: 2rem;
   	line-height: 3rem;
   	color: black;
  }
-span {
+.offer span {
   	color: red;
-  	font-size: 32px;	
-  	font-weight: 700;
+  	font-size: 38px;	
+  	font-weight: 900;
 }
 .main-subtitle {
 	margin-bottom: 1rem;
-	font-size: 26px;
-	font-weight: 600;
+	font-size: 30px;
 	line-height: 2rem;
 	color: #000;
 }	
 
 
 
+
+.form-checkbox {	
+    vertical-align: middle;
+    margin-top: -3px;
+     cursor: pointer;
+}
 

@@ -1,282 +1,450 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>CoffeeMe</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-																<!--Навигация-->
-	<nav>
-		<div class="container nav-container">
-			<div class="row">
-				<div class="col-xl-3">
-				<div class="logo">
-					<img src="img/logo.svg" alt="">
-					<div class="logo-text">CompHelp</div>
+	<head>
+		<meta charset="UTF-8">
+		<title>CoffeeMe</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			<!--Навигация-->
+			<nav>
+				<div class="container nav-container">
+					<div class="row">
+						<div class="col-xl-2">
+							<div class="logo">
+								<img src="img/logo.svg" alt="">
+								<div class="logo-text">IT-MAG</div>
+							</div>
+						</div>
+						<div class="col-xl-5 navigation">
+							<div class="nav">
+								<ul>
+									<li><a href="#">Услуги и цены</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 phone">
+							<a href="tel:89639030887">+7 932-301-03-73</a>
+						</div>
+						<div class="col-xl-2 icons">
+							<div class="icons-nav">
+								<i class="fa fa-vk" aria-hidden="true"></i>
+								<i class="fa fa-whatsapp" aria-hidden="true"></i>
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
 				</div>
+			</nav>
+			<!--Конец навигации-->
+			<!--Главный экран-->
+			<div class="container offer-container">
+				<div class="row offer-row justify-content-between">
+					<div class="col-xl-6 offer">
+						<h1>Компьютерная помощь<br>дистанционно<br>и на дому<br>от <span>250 руб.</span></h1>
+						<p class="main-subtitle">Бесплатный выезд<br>в любой район Магнитогорска</p>
+					</div>
+					<div class="col-xl-4">
+						<div class="main-form">
+							<h3 class="main-form-text">Нужна<br><b>компьютерная помощь?</b><br>Оставьте заявку и мастер перезвонит Вам</h3>
+							<form class="form" action="mailer/smart.php" method="POST">
+								<label for="#">Ваше имя</label>
+								<input name="user_name" class="form-input" type="text">
+								<label for="#">Номер телефона</label>
+								<input name="user_phone" class="form-input" type="text">
+								<button class="main-form-btn button" type="submit">Оставить заявку</button>
+								<p class="checkboxp"><input type="checkbox" class="form-checkbox" id="input_3_1002" name="q3_myProducts3[][id]" value="1002" checked>
+									Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></p>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-xl-5 navigation">
-					<div class="nav">
-					<ul>
-						<li><a href="#">Услуги и цены</a></li>
-						<li><a href="#">Вызов мастера</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-xl-4 phone">
-				<p>+7 909 370 00 00</p>
-				<div><button class="nav-btn" type="submit">Вызвать мастера</button></div>
-			</div>
-		</div>
-		</div>
-	</nav>	
-																<!--Конец навигации-->	
-																<!--Главный экран-->
-		<div class="container offer-container">
-			<div class="row offer-row justify-content-between">
-
-								<div class="col-xl-6 offer">
-									<h1>Компьютерная помощь<br>дистанционно<br>и на дому<br>от <span><b>250 руб.</b></span></h1>
-									<p class="main-subtitle">Бесплатный выезд<br>в любой район Магнитогорска</p>						
-								</div>
-
-								<div class="col-xl-4">
-									<div class="main-form">
-											<h3 class="main-form-text">Нужна<br><b>компьютерная помощь?</b><br>Оставьте заявку и мастер перезвонит Вам</h3>
-											<form class="form" action="#" method="POST">
-												<label for="#">Ваше имя</label>
-												<input class="form-input" type="text">
-												<label for="#">Номер телефона</label>
-												<input class="form-input" type="text">
-												<button class="main-form-btn button" type="submit">Оставить заявку</button>
-												<p>*Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</p>
-											</form>
-									</div>
-								</div>
-			</div>
-		</div>	
-															<!--Конец главного экрана-->
-</header>
-
-	<main>
-	<div class="advantages">
-		<div class="container advantages-container">
-		<h2>Преимущества работы со мной</h2>
-		<div class="advantage-list">
-		<div class="ad1"><img src="img/one.svg"><p>Оглашаю реальную стоимость ремонта ПК или ноутбука ДО его начала.</p></div>
-		<div class="ad2"><img src="img/two.svg"><p>Квалифицированный мастер со стажем</p></div>
-		<div class="ad3"><img src="img/three.svg"><p>Приступаю к работе только после проведения диагностики и согласования перечня услуг и стоимости с заказчиком.</p></div>
-		<div class="ad4"><img src="img/four.svg"><p>Закупаю комплектующие напрямую у поставщиков. Вы платите только их реальную стоимость.</p></div>
-		<div class="ad5"><img src="img/five.svg"><p>Любой ремонт осуществляю максимально быстро, без всяких доплат и затягивания сроков возврата.</p></div>
-		<div class="ad6"><img src="img/six.svg"><p>Даю гарантию до 3 лет на свои услуги  и официальные документы от собственного ИП.</p></div>
-	</div>
-		</div>
-	</div>
-
-	<section class="price">
-		<div class="container price-container">
-			<div class="row">
-				<div class="col-xl-12">
-					<h2>Услуги и цены</h2>
-				</div>
-			</div>
-			<div class="row">
-			<div class="col-xl-8 tables">
-				<table class="table1">
-				  <tr>
-				   	<th>Наименование услуги</th>
-				    
-				  </tr>
-
-				  <tr>
-				    <td>УСТАНОВКА АНТИВИРУСА</td>				    
-				  </tr>
-
-				   <tr>
-				    <td>НАСТРОЙКА ИНТЕРНЕТА</td>
-				  </tr>
-
-				   <tr>
-				    <td>УСТАНОВКА OFFICE</td>
-				  </tr>
-
-				   <tr>
-				    <td>УСТАНОВКА ПРОГРАММ</td>
-				  </tr>
-
-				  <tr>
-				    <td>НАСТРОЙКА WI-FI</td>				    
-				  </tr>
-
-				  <tr>
-				    <td>УСТАНОВКА ПРОГРАММ</td>
-				   </tr>
-
-				  <tr>
-				    <td>ЗАМЕНА БЛОКА ПИТАНИЯ</td>
-				  </tr>
-
-				  <tr>
-				    <td>УСТАНОВКА ДРАЙВЕРОВ</td>
-				  </tr>
-				 </table>	
-				 </div>
-
-				 <div class="col-xl-2 tables">
-				<table class="table1">
-				 <th>Время работы</th>
-				 <tr>
-				 	<td>1 час</td>
-				 </tr>
-				 <tr>
-				 	<td>1 час</td>
-				 </tr>
-				 <tr>
-				 	<td>1 час</td>
-				 </tr>
-				 <tr>
-				 	<td>1 час</td>
-				 </tr>
-				 <tr>
-				 	<td>1 час</td>
-				 </tr>
-				 <tr>
-				 	<td>1 час</td>
-				 </tr>
-				 <tr>
-				 	<td>1 час</td>
-				 </tr>
-				 <tr>
-				 	<td>1 час</td>
-				 </tr>				
-				</table>
-			</div>
-				<div class="col-xl-2 tables">
-				<table class="table1">
-				    <th>Стоимость, руб.</th>
-				    <tr>
-				    	<td>100 руб.</td>
-				    </tr>
-				    <tr>
-				    	<td>100 руб.</td>
-				    </tr>
-				    <tr>
-				    	<td>100 руб.</td>
-				    </tr>
-				    <tr>
-				    	<td>100 руб.</td>
-				    </tr>
-				    <tr>
-				    	<td>100 руб.</td>
-				    </tr>
-				    <tr>
-				    	<td>100 руб.</td>
-				    </tr>
-				    <tr>
-				    	<td>100 руб.</td>
-				    </tr>
-				    <tr>
-				    	<td>100 руб.</td>
-				    </tr>
-				</table>
-				    </div>	
-			
-</div>
-		
-	</section>
-															<!--Это слайдер-->
-	
-
-	<section class="section-review">
-		<div class="container review-container">
-			<div class="row">
-				<div class="col-xl-12">
-					<h2>Остались вопросы?</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xl-4 offset-xl-4">
+				<!--Конец главного экрана-->
+			</header>
+			<main>
+				<section class="advantages">
+					<div class="container advantages-container">
+						<h2>Преимущества работы со мной</h2>
+						<div class="col-xl-8">
+							<div class="advantage-list">
+								<div class="ad1"><img src="img/one.svg"><p>Квалифицированный мастер со стажем более 10 лет</p></div>
+								<div class="ad2"><img src="img/two.svg"><p>Цены ниже, чем у сервис-центров</p></div>
+								<div class="ad3"><img src="img/three.svg"><p>Оглашаю стоимость услуг до начала ремонта ПК или установки программ</p></div>
+								<div class="ad4"><img src="img/four.svg"><p>Приступаю к работе после проведения диагностики и согласования перечня услуг и стоимости с заказчиком</p></div>
+								<div class="ad5"><img src="img/five.svg"><p>Любой ремонт осуществляю максимально быстро, без всяких доплат и затягивания сроков</p></div>
+								<div class="ad6"><img src="img/six.svg"><p>Даю гарантию на свои услуги, выдаю чеки</p></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="price">
+					<div class="container price-container">
+						<div class="row">
+							<div class="col-xl-12">
+								<h2>Услуги и цены</h2>
+							</div>
+						</div>
+						<div class="row table-row">
+							<div class="col-xl-12 tables">
+								<table class="table1">
+									<tr><td><span>Компьютерные работы</span></td><td></td></tr>
+									<tr><td>Настройка принтера (МФУ)</td><td>700 руб</td></tr>
+									<tr><td>Установка Microsoft Offce: 2007, 2010, 2013, 2016 или 2019</td><td>750 руб</td></tr>
+									<tr><td>Установка антивируса: на компьютер, ноутбук.</td><td>400 руб</td></tr>
+									<tr><td>Установка программ</td><td>400 руб</td></tr>
+									<tr><td><span>Компьютерная помощь</span></td><td></td></tr>
+									<tr><td>Переустановка Windows 7, 10</td><td>850 руб</td></tr>
+									<tr><td>Настройка Windows 7, 10</td><td>800 руб</td></tr>
+									<tr><td>Установка драйверов</td><td>300 руб</td></tr>
+									<tr><td>Чистка компьютера от пыли: чистка кулера (вентилятора) компьютера</td><td>700 руб</td></tr>
+									<tr><td>Чистка компьютера от пыли: замена термопасты на процессоре компьютера</td><td>700 руб</td></tr>
+									<tr><td>Чистка компьютера от пыли: замена термопасты на видеокарте компьютера</td><td>700 руб</td></tr>
+									<tr><td>Чистка компьютера от мусора: чистка компьютера от ненужных программ и файлов</td><td>800 руб</td></tr>
+									<tr><td>Чистка компьютера от мусора: чистка реестра компьютера</td><td>800 руб</td></tr>
+									<tr><td>Чистка компьютера от мусора: чистка жесткого диска компьютера</td><td>800 руб</td></tr>
+									<tr><td><span>Ремонт и настройка компьютеров</span></td><td></td></tr>
+									<tr><td>Полная настройка компьютера: нового, старого, слабого, домашнего, офисного, игрового.</td><td>800 руб</td></tr>
+									<tr><td>Обновление Биос компьютера</td><td>400 руб</td></tr>
+									<tr><td>Настройка Bios на компьютере</td><td>500 руб</td></tr>
+									<tr><td>Проверка жесткого диска компьютера: восстановление сбойных секторов на жестком диске компьютера</td><td>800 руб</td></tr>
+									<tr><td>Подключение и настройка внешних устройств на компьютере: веб камеры, микрофона, джойстика, монитора, принтера, сканера</td><td>650 руб</td></tr>
+									<tr><td>Установка пароля на компьютер</td><td>400 руб</td></tr>
+									<tr><td>Сброс пароля на компьютере</td><td>800 руб</td></tr>
+									<tr><td>Переустановка Windows без переустановки драйверов и программ</td><td>850 руб</td></tr>
+									<tr><td>Переустановка Виндовс с переустановкой всех драйверов</td><td>1200 руб</td></tr>
+									<tr><td>Полная переустановка Windows: переустановка всех драйверов; переустановка программ - Ms Office, Антивируса, Adobe Reader, Архиваторов, Браузеров, Skype.</td><td>1500 руб</td></tr>
+									<tr><td>Сохранение данных, настроек перед переустановкой Windows</td><td>900 руб</td></tr>
+									<tr><td>Восстановление запуска (загрузчика) Windows</td><td>900 руб</td></tr>
+									<tr><td>Восстановление Виндовс из точки восстановления</td><td>700 руб</td></tr>
+									<tr><td>Восстановление Windows после сбоя (при появлении STOP экрана)</td><td>1500 руб</td></tr>
+									<tr><td>Восстановление настроек Windows</td><td>1300 руб</td></tr>
+									<tr><td>Восстановление пароля на Windows</td><td>800 руб</td></tr>
+									<tr><td>Восстановление заводской Виндовс</td><td>900 руб</td></tr>
+									<tr><td>Настройка Виндовс минимальная: настройка и оптимизация.</td><td>800 руб</td></tr>
+									<tr><td>Полная настройка Windows: настройка и оптимизация; чистка системного реестра; настройка автозапуска; проверка на вирусы; установка необходимых программ.</td><td>1200 руб</td></tr>
+									<tr><td>Обновление драйверов Windows</td><td>400 руб</td></tr>
+									<tr><td>Установка обновлений Windows</td><td>500 руб</td></tr>
+									<tr><td>Установка пароля на Windows</td><td>400 руб</td></tr>
+									<tr><td>Сброс пароля на Windows</td><td>800 руб</td></tr>
+									<tr><td><span>Ремонт ноутбуков</span></td><td></td></tr>
+									<tr><td>Чистка ноутбука от пыли: чистка системы охлаждения ноутбука</td><td>1300 руб</td></tr>
+									<tr><td>Чистка ноутбука от пыли: чистка кулера (вентилятора) ноутбука</td><td>1300 руб</td></tr>
+									<tr><td>Чистка ноутбука от пыли: замена термопасты на ноутбуке</td><td>1300 руб</td></tr>
+									<tr><td>Чистка ноутбука от ненужных программ и файлов</td><td>800 руб</td></tr>
+									<tr><td>Чистка ноутбука от вирусов</td><td>450 руб</td></tr>
+									<tr><td>Полная настройка ноутбука</td><td>1400 руб</td></tr>
+									<tr><td>Обновление БИОС (BIOS) на ноутбуке</td><td>400 руб</td></tr>
+									<tr><td>Настройка БИОС на ноутбуке</td><td>700 руб</td></tr>
+									<tr><td>Сброс настроек на ноутбуке: возвращение к заводским настройкам ноутбука.</td><td>800 руб</td></tr>
+									<tr><td>Проверка жесткого диска ноутбука: восстановление сбойных секторов жесткого диска ноутбука.</td><td>700 руб</td></tr>
+									<tr><td>Установка пароля на ноутбук</td><td>400 руб</td></tr>
+									<tr><td>Сброс пароля на ноутбуке</td><td>800 руб</td></tr>
+									<tr><td><span>Сборка компьютеров на заказ</span></td><td></td></tr>
+									<tr><td>Апгрейд процессора компьютера: замена процессора на более мощный.</td><td>750 руб</td></tr>
+									<tr><td>Модернизация материнской платы компьютера: замена материнской платы без переустановки Windows.</td><td>800 руб</td></tr>
+									<tr><td>Апгрейд видеокарты компьютера: замена видеокарты на более мощную.</td><td>700 руб</td></tr>
+									<tr><td>Модернизация оперативной памяти компьютера: увеличение оперативной памяти.</td><td>500 руб</td></tr>
+									<tr><td>Апгрейд жесткого диска компьютера: замена жесткого диска на диск большего объема; установка второго жесткого диска; перенос данных со старого жесткого диска компьютера на новый диск.</td><td>850 руб</td></tr>
+									<tr><td>Модернизация блока питания компьютера: замена блока питания на более мощный.</td><td>500 руб</td></tr>
+									<tr><td>Апгрейд корпуса компьютера</td><td>1200 руб</td></tr>
+									<tr><td><span>Модернизация компьютеров и ноутбуков</span></td><td></td></tr>
+									<tr><td>Модернизация ноутбука</td><td>1200 руб</td></tr>
+									<tr><td>Апгрейд оперативной памяти ноутбука</td><td>800 руб</td></tr>
+									<tr><td>Апгрейд жесткого диска ноутбука: перенос данных со старого жесткого диска ноутбука на новый HDD.</td><td>800 руб</td></tr>
+									<tr><td><span>Сборка компьютеров на заказ</span></td><td></td></tr>
+									<tr><td>Установка SSD диска на компьютер: перенос данных с жесткого диска на SSD.</td><td>950 руб</td></tr>
+									<tr><td>Сборка компьютера</td><td>1200 руб</td></tr>
+									<tr><td>Сборка компьютера для офиса</td><td>1200 руб</td></tr>
+									<tr><td>Доставка компьютера по Магнитогорску</td><td>450 руб</td></tr>
+									<tr><td>Сборка компьютера для игр</td><td>1200 руб</td></tr>
+									<tr><td>Сборка компьютера для графики</td><td>1200 руб</td></tr>
+									<tr><td>Сборка компьютера из комплектующих заказчика</td><td>1200 руб</td></tr>
+									<tr><td><span>Модернизация компьютеров и ноутбуков</span></td><td></td></tr>
+									<tr><td>Замена материнской платы на компьютере</td><td>700 руб</td></tr>
+									<tr><td>Замена видеокарты на компьютере</td><td>300 руб</td></tr>
+									<tr><td>Замена жесткого диска на компьютере</td><td>300 руб</td></tr>
+									<tr><td>Замена оперативной памяти на компьютере</td><td>300 руб</td></tr>
+									<tr><td>Замена блока питания компьютера</td><td>400 руб</td></tr>
+									<tr><td>Замена жесткого диска на SSD диск в ноутбуке: перенос данных с жесткого диска ноутбука на SSD диск.</td><td>500 руб</td></tr>
+									<tr><td>Установка SSD диска в ноутбук вместо DVD</td><td>800 руб</td></tr>
+									<tr><td><span>Настройка Wi-Fi</span></td><td></td><span></span></tr>
+									<tr><td>Настройка Wi-Fi роутера</td><td>500 руб</td></tr>
+									<tr><td>Настройка интернета на дому</td><td>400 руб</td></tr>
+									<tr><td>Настройка интернета в офисе</td><td>500 руб</td></tr>
+									<tr><td><span>Поиск и удаление вирусов</span></td><td></td></tr>
+									<tr><td>Удаление (лечение) вирусов</td><td>700 руб</td></tr>
+									<tr><td>Удаление вирусов: с компьютера, ноутбука.</td><td>700 руб</td></tr>
+									<tr><td><span>Восстановление данных</span></td><td></td></tr>
+									<tr><td>Восстановление данных</td><td>От 600 руб</td></tr>
+									<tr><td><span>Компьютерные работы</span></td><td></td></tr>
+									<tr><td>Удаленное обслуживание компьютеров</td><td>700 руб</td></tr>
+									<tr><td>Удаленное обслуживание сервера</td><td>900 руб</td></tr>
+									<tr><td>Абонентское обслуживание сервера</td><td>От 1000 руб</td></tr>
+									<tr><td><span>Настройка Wi-Fi</span></td><td></td></tr>
+									<tr><td>Настройка локальной сети</td><td>400 руб</td></tr>
+									<tr><td>Настройка беспроводной сети</td><td>500 руб</td></tr>
+									<tr><td>Настройка общего доступа к файлам или принтеру</td><td>400 руб</td></tr>
+									<tr><td>Настройка удаленного доступа к сети</td><td>1000 руб</td></tr>
+									<tr><td>Прокладка сетевого кабеля</td><td>30 руб/м</td></tr>
+									<tr><td>Разделка сетевого кабеля</td><td>350 руб</td></tr>
+								</table>
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xl-4 offset-xl-4">
+								<button class="button main-form-btn price-btn popup-btn header-btn" data-toggle="modal">Оставить заявку</button>
+							</div>
+						</div>
+					</div>
 					
-					<div class="main-form">
-											<h2 class="main-form-text">Заказать <b>бесплатную консультацию</b></h2>
-											<form class="form" action="#" method="POST">
-												<label for="#">Ваше имя</label>
-												<input class="form-input" type="text">
-												<label for="#">Номер телефона</label>
-												<input class="form-input" type="text">
-												<button class="main-form-btn button" type="submit">Оставить заявку</button>
-												<p>*Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</p>
-											</form>
+				</section>
+				<!--Это слайдер-->
+				<section class="review">
+					<div class="container review-container">
+						<div class="row">
+							<div class="col-xl-12">
+								<h2>Отзывы</h2>
+							</div>
+							<div class="col-xl-12 reviews review-slider">
+								<div class="slider-item">
+									<div class="review1">
+										<p>12.07.2020 г.</p>
+										<p>Алина Булатова</p>
+										<div class="icon-star">
+											<p><i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i></p>
+										</div>
+										<p>Вызвала мастера для ремонта ноутбука. Нужна была замена дисковода из-за повреждения лазера. Ремонт был выполнен в течение нескольких дней. Стоимость составила около 1000 рублей без учета запчастей. После ремонта дисковод работает уже несколько месяцев без проблем. При общение с мастеров я поняла, что это квалифицированный работник, понимающий свое дело. Он мне подробно изложил суть ремонта.</p>
 									</div>
-
-				</div>
-			</div>
-		</div>
-	</section>		
-	</main>
-
-	<footer>
-		<div class="container footer-container">
-
-		<div class="col-xl-4 phone">
-				<p>+7 909 370 00 00</p>
-				<div><button class="nav-btn" type="submit">Заказать звонок</button></div>
-			</div>
-			</div>
-	</footer>
-	<!-- <script src="js/jquery-3.5.1.min.js"></script> -->
-	<!-- <script src="js/owl.carousel.min.js"></script> -->
-	<!-- <script src="js/script.js"></script> -->
-
-<!--Подключеам стили слик слайдера-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<link rel="stylesheet" href="js/slick/slick.css">
-	<link rel="stylesheet" href="js/slick/slick-theme.css">
-
-																			<!--Подключеам саму библиотеку слик слайдера-->
-
-	<script src="js/slick/slick.min.js"></script>
-
-																			<!--Инициализируем слайдера-->
-
-	<script>
-		
-  $('.review-slider').slick({
-  	dots: true,
-  	arrows: true,
-    infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-  });
-
-	</script>
-
-
-</body>
-</html>
+								</div>
+								<div class="slider-item">
+									<div class="review2">
+										<p>10.06.2020 г.</p>
+										<p>Юрий Холодков</p>
+										<div class="icon-star">
+											<p><i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i></p>
+										</div>
+										<p>Стал зависать компьютер, антивирус молчал. Вызвал Рината. Он приехал очень быстро, сел за компьютер и стал колдовать. Попутно объясняя, что и зачем он делает. В компьютерах я немного понимаю, так что его слова были для меня понятны. За полчаса вычислил какую-то программу и удалил её. Перезагрузил и всё. Комп до сих пор не зависал. Взял всего 700 рублей. И порекомендовал прикупить другой антивирус.</p>
+									</div>
+								</div>
+								<div class="slider-item">
+									<div class="review3">
+										<p>19.04.2020 г.</p>
+										<p>Ольга Фролова</p>
+										<div class="icon-star">
+											<p><i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i></p>
+										</div>
+										<p>Я тоже обращался к мастеру, у меня слетела винда и нужно было поставить новую, а так как ПК мне нужен для работы для меня важно было сделать это срочно. Позвонил мастеру договорились о встрече, он вошел в мою ситуацию и приехал очень быстро, несмотря на режим самоизоляции, за что отдельное спасибо. Цена установки меня тоже удивила довольно-таки низкая. Сервисом остался доволен.</p>
+									</div>
+								</div>
+								<div class="slider-item">
+									<div class="review4">
+										<p>01.03.2020 г.</p>
+										<p>Антон Грищак</p>
+										<div class="icon-star">
+											<p><i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i></p>
+										</div>
+										<p>Сломалась видеокарта, ребята помогли мне выбрать подходящую мне видеокарту, установили её, а также дополнительно установили новый виндовс, антивирус и поменяли некоторые настройки, благодаря которым теперь мой компьютер работает быстрее</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="question">
+					<div class="container question-container">
+						<div class="row">
+							<div class="col-xl-12">
+								<h2>Остались вопросы?</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xl-4 offset-xl-4">
+								
+								<div class="main-form">
+									<h3 class="main-form-text">Оставьте заявку и получите <b>бесплатную консультацию</b></h3>
+									<form class="form" action="mail.php" method="POST">
+										<label for="#">Ваше имя</label>
+										<input class="form-input" type="text">
+										<label for="#">Номер телефона</label>
+										<input class="form-input" type="text">
+										<label for="#">Сообщение</label>
+										<textarea class="form-input" rows="3"></textarea>
+										<button class="main-form-btn button" type="submit">Оставить заявку</button>
+										<p class="checkboxp"><input type="checkbox" class="form-checkbox" id="input_3_1002" name="q3_myProducts3[][id]" value="1002" checked>
+											Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></p>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="contacts">
+						<div class="container contacts-container">
+							<div class="row">
+								<div class="col-xl-6 contact-adress">
+									<h2>Контакты</h2>
+									<p><span class="fix-width">Адрес офиса:</span> <span>г. Магнитогорск, ул. Суворова, д. 114</span></p>
+									<p><span class="fix-width">Телефон/WhatsApp:</span> <span><a href="tel:89639030887">+7 932-301-03-73</a></span></p>
+									<p><span class="fix-width">E-mail:</span> <span><a href="mailto:itmag174@mail.ru" class="mail">itmag174@mail.ru</a></span></p>
+									
+								</div>
+								<!--Это карта-->
+								<div class="col-xl-6">
+									<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4d243761270c7608cfa9e5f5319b89bcc0461657bd9edbbc0c3789c8e1e14612&amp;width=100%25&amp;height=399&amp;lang=ru_RU&amp;scroll=false"></script>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+				<footer>
+					<div class="container footer-container">
+						<div class="row footer-row">
+							<div class="col-xl-3">
+								<div class="icons-footer">
+									<i class="fa fa-vk" aria-hidden="true"></i>
+									<i class="fa fa-whatsapp" aria-hidden="true"></i>
+									<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="col-xl-6 phone-footer">
+								<a href="tel:89639030887">+7 932-301-03-73</a>
+								<p>Политика конфидинциальности</p>
+							</div>
+							<div class="col-xl-3 developer">
+								<p>Сайт сделан</p>
+								<img src="img/ar.svg">
+								
+							</div>
+						</div>
+					</div>
+				</footer>
+				<!--Модальные окна-->
+				<!--Получить консультацию-->
+				
+				<section class="popup">
+					<!--Само модальное окно-->
+					<div class="popup-dialog">
+						<!--Содержимое модальное окно-->
+						<div class="popup-content">
+							
+							<button class="popup-close">&times;</button>
+							<!--Заголовок окно-->
+							<h4 class="popup-header">Хотите вызвать мастера<br>на дом?</h4>
+							<p>Оставьте контактные данные<br>для связи</p>
+							<div class="form popup-form">
+								<form action="mail.php">
+									<label for="#">Ваше имя</label>
+									<input class="form-input" type="text">
+									<label for="#">Номер телефона</label>
+									<input class="form-input" type="text">
+									<label for="#">Сообщение</label>
+									<textarea class="form-input" rows="3"></textarea>
+									<button class="main-form-btn button" type="submit">Оставить заявку</button>
+									<p class="checkboxp"><input type="checkbox" class="form-checkbox" id="input_3_1002" name="q3_myProducts3[][id]" value="1002" checked>
+										Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></p>
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<!--Подключеам стили слик слайдера-->
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+					<link rel="stylesheet" href="js/slick/slick.css">
+					<link rel="stylesheet" href="js/slick/slick-theme.css">
+					<!--Подключеам саму библиотеку слик слайдера-->
+					<script src="js/slick/slick.min.js"></script>
+					<!--Инициализируем слайдера-->
+					<script>
+						//для работы popup
+						$(document).ready(function(){
+							$('.popup-btn').on('click', function(event){
+								event.preventDefault();
+													$('.popup').fadeIn('slow/400/fast', function() {
+								});
+							
+							$('.popup-close').on('click', function(event) {
+								event.preventDefault();
+													$('.popup').fadeOut('slow/400/fast', function() {
+								});
+								/* Act on the event */
+							});
+							});
+							/*Слайдер с отзывами*/
+						
+					$('.review-slider').slick({
+					dots: true,
+					arrows: true,
+					infinite: true,
+					autoplay: true,
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					   prevArrow: "<img src='img/l.svg' class='slick-prev slick-arrow custom-arrow-prev' alt='1'>",
+                       nextArrow: "<img src='img/r.svg' class='slick-next slick-arrow custom-arrow-next' alt='2'>",
+					responsive: [
+					{
+					
+					breakpoint: 991,
+					settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+					}
+					},
+					{
+					breakpoint: 767,
+					settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+					}
+					}
+					// You can unslick at a given breakpoint now by adding:
+					// settings: "unslick"
+					// instead of a settings object
+					]
+					});
+					});
+					</script>
+					<script>
+						$('form').submit(function(event) {
+							event.preventDefault();
+							$.ajax({
+								url: 'mailer/smart.php',
+								type: 'POST',
+								data: $(this).serialize()
+							})
+							.done(function() {
+								$(this).find('input').val("");
+								alert("Заявка принята!");
+								$('form').trigger('reset');
+							});
+							return false;				
+						});
+					</script>
+				</body>
+			</html>

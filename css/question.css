@@ -1,0 +1,10 @@
+.question {
+	background-image: url(..//img/keyboard.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;	
+	height: 700px;
+}
+.question h2 {
+	padding: 60px 0;
+}
