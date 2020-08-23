@@ -8,16 +8,15 @@
 	justify-content: space-between;
 }
 .price {
+	background-color: #d4d4d4;
 	background-image: url(..//img/bg222.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-position: bottom;	
 	height: 1000px;
 	padding: 0 0 60px 0;
 }
-.price h2 {
-	padding: 60px 0 0 0;
-}
+
 .table-row {
 	height: 66%;
 	overflow: auto;
@@ -67,3 +66,6 @@ table span {
     background: #f2f2f2; 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
+
+.slick-list {height: 100% !important;}
+.slick-track {height: 97% !important;}

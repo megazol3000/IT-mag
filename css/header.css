@@ -1,5 +1,5 @@
 header {
-	background-color: #000;
+	background-color: #b7b9b6;
 	color: #fff;
 	height: 100vh;
 	background-image: url(..//img/bg5.jpg);
@@ -8,7 +8,7 @@ header {
 	background-position: center center;	
 	
 }
-.logo {
+.logo, .logotip {
 	display: flex;
 	align-items: center;
 }
@@ -38,7 +38,7 @@ nav {
 	align-items: center;
 	justify-content: center;
 }
-li {
+nav li {
 	margin-right: 30px;
 }
 .phone {
@@ -76,11 +76,24 @@ li {
 
 				/*Offer*/
 .offer-container {
-	height: 80%;
+	height: 100%;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-moz-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-around;
 }
- .offer-row {
-	height: 85%;
-    align-content: flex-end;
+
+.hero {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
 }
 h1 {
 	font-size: 46px;
@@ -90,6 +103,11 @@ h1 {
   	line-height: 3rem;
   	color: black;
  }
+
+.offer{
+ 	width: 50%;
+ }
+ 
 .offer span {
   	color: red;
   	font-size: 38px;	
@@ -101,13 +119,85 @@ h1 {
 	line-height: 2rem;
 	color: #000;
 }	
-
-
-
-
 .form-checkbox {	
     vertical-align: middle;
     margin-top: -3px;
      cursor: pointer;
 }
 
+.burger, .burger-menu__button {
+	min-width: 40px;
+	height: 50px;
+	position: relative;
+}
+.burger #burger2 {
+	display: block;
+	position: absolute;
+	top: calc(50% - 2px);
+	height: 4px;
+	width: 100%;
+	background-color: #fff;
+}
+.burger #burger3 {
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	height: 4px;
+	width: 100%;
+	background-color: #fff;
+}
+.burger #burger1 {
+	display: block;
+	position: absolute;
+	top: 10px;
+	height: 4px;
+	width: 100%;
+	background-color: #fff;
+}
+.header-burger {
+	display: none;
+    justify-content: flex-end;
+}
+.burger-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: translateX(100%);
+	background-color: rgba(75, 109, 72, 75%);
+	z-index: 999;
+	transition: 0.6s ease;
+}
+.burger-menu_active {
+	transform: translateX(0);
+}
+
+#burger4, #burger5 {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background-color: #fff;
+	top: calc(50% - 2px);
+
+}
+#burger4 {
+	transform: rotate(45deg);
+}
+#burger5 {
+	transform: rotate(-45deg);
+}
+.burger-menu-container {
+	flex-direction: column;
+	align-items: flex-end;
+	display: flex;
+	padding-top: 10px;
+}
+.burger-menu ul {
+	text-align: right;
+}
+.burger-menu ul li, .burger-menu__button {
+	margin-bottom: 10px;
+
+}

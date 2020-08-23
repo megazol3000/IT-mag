@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>CoffeeMe</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
@@ -15,29 +16,36 @@
 			<nav>
 				<div class="container nav-container">
 					<div class="row">
-						<div class="col-xl-2">
+						<div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-3 logotip">
 							<div class="logo">
 								<img src="img/logo.svg" alt="">
 								<div class="logo-text">IT-MAG</div>
 							</div>
 						</div>
-						<div class="col-xl-5 navigation">
+						<div class="col-xl-5 col-lg-4 col-md-4 navigation">
 							<div class="nav">
 								<ul>
-									<li><a href="#">Услуги и цены</a></li>
+									<li><a href="#">Услуги&nbsp;и&nbsp;цены</a></li>
 									<li><a href="#">Отзывы</a></li>
 									<li><a href="#">Контакты</a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="col-xl-3 phone">
+						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-7 phone">
 							<a href="tel:89639030887">+7 932-301-03-73</a>
 						</div>
-						<div class="col-xl-2 icons">
+						<div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 icons">
 							<div class="icons-nav">
 								<i class="fa fa-vk" aria-hidden="true"></i>
 								<i class="fa fa-whatsapp" aria-hidden="true"></i>
 								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="col-sm-2 col-2 header-burger">
+							<div class="burger">
+								<span id="burger1"></span>
+								<span id="burger2"></span>
+								<span id="burger3"></span>
 							</div>
 						</div>
 					</div>
@@ -46,13 +54,13 @@
 			<!--Конец навигации-->
 			<!--Главный экран-->
 			<div class="container offer-container">
-				<div class="row offer-row justify-content-between">
-					<div class="col-xl-6 offer">
+				<div class="hero">
+					<div class="offer">
 						<h1>Компьютерная помощь<br>дистанционно<br>и на дому<br>от <span>250 руб.</span></h1>
 						<p class="main-subtitle">Бесплатный выезд<br>в любой район Магнитогорска</p>
 					</div>
-					<div class="col-xl-4">
-						<div class="main-form">
+					<div class="form-wrapper">
+						<div class="main-form hero-form">
 							<h3 class="main-form-text">Нужна<br><b>компьютерная помощь?</b><br>Оставьте заявку и мастер перезвонит Вам</h3>
 							<form class="form" action="mailer/smart.php" method="POST">
 								<label for="#">Ваше имя</label>
@@ -67,8 +75,47 @@
 						</div>
 					</div>
 				</div>
+
+
+
+<!-- <div class="container offer-container">
+				<div class="row offer-row">
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 offer">
+						<h1>Компьютерная помощь<br>дистанционно<br>и на дому<br>от <span>250 руб.</span></h1>
+						<p class="main-subtitle">Бесплатный выезд<br>в любой район Магнитогорска</p>
+					</div>
+					<div class="col-xl-4 offset-xl-2 col-lg-5 col-md-5 col-sm-6 offset-sm-3">
+						<div class="main-form">
+							<h3 class="main-form-text">Нужна<br><b>компьютерная помощь?</b><br>Оставьте заявку и мастер перезвонит Вам</h3>
+							<form class="form" action="mailer/smart.php" method="POST">
+								<label for="#">Ваше имя</label>
+								<input name="user_name" class="form-input" type="text">
+								<label for="#">Номер телефона</label>
+								<input name="user_phone" class="form-input" type="text">
+								<button class="main-form-btn button" type="submit">Оставить заявку</button>
+								<p class="checkboxp"><input type="checkbox" class="form-checkbox" id="input_3_1002" name="q3_myProducts3[][id]" value="1002" checked>
+									Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div> -->
+
 				<!--Конец главного экрана-->
-			</header>
+				<div class="burger-menu">
+					<div class="container burger-menu-container">
+						<div class="burger-menu__button">
+							<span id="burger4"></span>
+							<span id="burger5"></span>
+						</div>
+						<ul>
+							<li><a href="#">Услуги и цены</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>	
 			<main>
 				<section class="advantages">
 					<div class="container advantages-container">
@@ -200,7 +247,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xl-4 offset-xl-4">
+							<div class="col-xl-4 offset-xl-4 col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-6 offset-sm-3">
 								<button class="button main-form-btn price-btn popup-btn header-btn" data-toggle="modal">Оставить заявку</button>
 							</div>
 						</div>
@@ -284,7 +331,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xl-4 offset-xl-4">
+							<div class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-6 offset-sm-3">
 								
 								<div class="main-form">
 									<h3 class="main-form-text">Оставьте заявку и получите <b>бесплатную консультацию</b></h3>
@@ -307,37 +354,34 @@
 					<section class="contacts">
 						<div class="container contacts-container">
 							<div class="row">
-								<div class="col-xl-6 contact-adress">
+								<div class="col-xl-12 contact-adress">
 									<h2>Контакты</h2>
-									<p><span class="fix-width">Адрес офиса:</span> <span>г. Магнитогорск, ул. Суворова, д. 114</span></p>
-									<p><span class="fix-width">Телефон/WhatsApp:</span> <span><a href="tel:89639030887">+7 932-301-03-73</a></span></p>
-									<p><span class="fix-width">E-mail:</span> <span><a href="mailto:itmag174@mail.ru" class="mail">itmag174@mail.ru</a></span></p>
-									
+									<p>Адрес офиса: <span>г. Магнитогорск, ул. К.Маркса, д. 104</span></p>
+									<p>Телефон/WhatsApp: <span><a href="tel:89639030887">+7 932-301-03-73</a></span></p>
+									<p>E-mail: <span><a href="mailto:itmag174@mail.ru" class="mail">itmag174@mail.ru</a></span></p>									
 								</div>
-								<!--Это карта-->
-								<div class="col-xl-6">
-									<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4d243761270c7608cfa9e5f5319b89bcc0461657bd9edbbc0c3789c8e1e14612&amp;width=100%25&amp;height=399&amp;lang=ru_RU&amp;scroll=false"></script>
 								</div>
-							</div>
+								<!--Это карта-->								
 						</div>
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4d243761270c7608cfa9e5f5319b89bcc0461657bd9edbbc0c3789c8e1e14612&amp;width=100%25&amp;height=399&amp;lang=ru_RU&amp;scroll=false"></script>
 					</section>
 				</main>
 				<footer>
 					<div class="container footer-container">
 						<div class="row footer-row">
-							<div class="col-xl-3">
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 justify-content-center icons-foot">
 								<div class="icons-footer">
 									<i class="fa fa-vk" aria-hidden="true"></i>
 									<i class="fa fa-whatsapp" aria-hidden="true"></i>
 									<i class="fa fa-envelope-o" aria-hidden="true"></i>
 								</div>
 							</div>
-							<div class="col-xl-6 phone-footer">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 justify-content-center phone-footer">
 								<a href="tel:89639030887">+7 932-301-03-73</a>
-								<p>Политика конфидинциальности</p>
+								<p><a href="#" id="policy">Политика конфиденциальности</a></p>
 							</div>
-							<div class="col-xl-3 developer">
-								<p>Сайт сделан</p>
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 justify-content-center developer">
+								<p>Сайт&nbsp;сделан</p>
 								<img src="img/ar.svg">
 								
 							</div>
@@ -373,6 +417,7 @@
 							</div>
 						</div>
 					</section>
+					<script src="js/script.js"></script>
 					
 					<!--Подключеам стили слик слайдера-->
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -402,7 +447,7 @@
 					dots: true,
 					arrows: true,
 					infinite: true,
-					autoplay: true,
+					autoplay: false,
 					slidesToShow: 3,
 					slidesToScroll: 1,
 					   prevArrow: "<img src='img/l.svg' class='slick-prev slick-arrow custom-arrow-prev' alt='1'>",

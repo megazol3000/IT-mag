@@ -6,6 +6,7 @@
 @import url(footer.css);
 @import url(contacts.css);
 @import url(popup.css);
+@import url(media.css);
 
 * {
 	font-family: 'Roboto', sans-serif;
@@ -33,7 +34,16 @@ a {
 	max-width: 100%;
 	padding: 15px 25px;
 }
+.hero-form {
+	width: 400px;
+
 	/*Заголовок формы*/
+}
+.form-wrapper {
+	    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
 .main-form-text {
 	margin-bottom: 2rem;
 	font-size: 20px;
@@ -63,7 +73,7 @@ form a {
 /*Подписи к полям*/
 label {
 	position: absolute;
-	left: 50%;
+
 	transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	padding: 0.5rem;
@@ -92,4 +102,7 @@ font-size: 0.7em;
 .button:hover {
   cursor: pointer;
   background-color: #e3a103;
+}
+textarea {
+	resize: none;
 }
