@@ -104,6 +104,8 @@ header {height: inherit;}
 @media (max-width: 616px) {
 #policy {font-size: 8px;}
 .phone-footer a {font-size: 20px;}
+.popup-content {width: 80%; padding: 20px;}
+.popup-form {width: 100%;}
 }
 @media (max-width: 576px) {
 	.icons {display: none;}

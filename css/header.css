@@ -33,6 +33,7 @@ nav {
 	width: 100%;
 	z-index: 99;
 }
+.navbar {transition: 0.4s ease;}
 .nav ul, .navigation {
 	display: flex;
 	align-items: center;
@@ -198,6 +199,9 @@ h1 {
 	text-align: right;
 }
 .burger-menu ul li, .burger-menu__button {
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 
+}
+.burger-menu ul li a {
+	font-size: 30px;
 }
