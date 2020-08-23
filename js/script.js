@@ -1,7 +1,6 @@
 const burger = document.querySelector('.burger');
 const burgerClosed = document.querySelector('.burger-menu__button');
 const burgerMenu = document.querySelector('.burger-menu');
-const navbar - document.querySelector('.navbar');
 
 burger.addEventListener('click', () => {
 	burgerMenu.classList.toggle('burger-menu_active');
@@ -9,3 +8,4 @@ burger.addEventListener('click', () => {
 burgerClosed.addEventListener('click', () => {
 	burgerMenu.classList.remove('burger-menu_active');
 });
+
